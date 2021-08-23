@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+:root {
+  --primaryColor-bg: #fcd34d;
+  --primaryColor-text: #374151;
+}
+
+body {
+  font-family: 'Otomanopee One', sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#container {
+  background-color: var(--primaryColor-bg);
+  padding: 1rem;
+  flex: 0 1 auto;
+}
+
+#container-center {
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+
+h1 {
+  color: var(--primaryColor-text);
+  text-align: center;
+}
+
+#txt-input {
+  width: 60%;
+  padding: 1rem;
+  font-family: 'Otomanopee One', sans-serif;
+  margin: auto;
+  display: block;
+  height: 12vh;
+  margin-top: 1.3rem !important;
+  color: var(--primaryColor-text);
+}
+
+#btn-translate {
+  padding: 1rem 2rem;
+  margin-top: 0.8rem !important;
+  font-family: 'Otomanopee One', sans-serif;
+  margin: auto;
+  display: block;
+  border: 0px;
+  background-color: var(--primaryColor-bg);
+  border-radius: 5px;
+  color: var(--primaryColor-text);
+}
+
+#info {
+  margin-top: 2rem !important;
+  display: block;
+  color: var(--primaryColor-text);
+  padding: 0.5rem 1rem;
+  width: 89vw;
+  margin: auto;
+  text-align: center;
+}
+
+#output {
+  width: 60%;
+  height: 10vh;
+  padding: 1rem;
+  border: 1px solid gray;
+  border-radius: 0.2rem;
+  margin: auto;
+  color: var(--primaryColor-text);
+}
+
+#container h3 {
+  text-align: center;
+  color: var(--primaryColor-text);
+}
+
+#container p {
+  text-align: center;
+  color: var(--primaryColor-text);
+}
