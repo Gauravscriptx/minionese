@@ -11,7 +11,12 @@ function errorHandler(error) {
 }
 
 function clickHandler() {
-  outputDiv.innerText = 'bananan' + txtinput.value;
+  var inputText = txtinput.value;
+  fetch(getTranslationUrl(inputText))
+    .then((Response) => Response.json())
+    .then((json) => console.log(json.contents.translated))
+    .catch(errorHandler);
+  //   outputDiv.innerText = 'bananan' + txtinput.value;
 }
 
 btnTranslate.addEventListener('click', clickHandler);
