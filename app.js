@@ -1,10 +1,10 @@
-var txtinput = document.querySelector('#txt-input');
-var btntranslate = document.querySelector('#btn-translate');
-var outputdiv = document.querySelector('#output');
+var txTinput = document.querySelector('#txt-input');
+var btnTranslate = document.querySelector('#btn-translate');
+var outputDiv = document.querySelector('#output');
 console.log(txtinput);
-
-function clickhandler() {
+outputDiv.innertxt = 'bananan';
+function clickHandler() {
   console.log('clicked!');
   console.log('input', txtinput, value);
 }
-btntranslate.addEventListener('click', clickhandler);
+btnTranslate.addEventListener('click', clickHandler);
